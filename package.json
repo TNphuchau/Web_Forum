@@ -17,10 +17,8 @@
     "url": "https://github.com/TNphuchau/Web_Forum/issues"
   },
   "homepage": "https://github.com/TNphuchau/Web_Forum#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "devDependencies": {
+    "express": "^4.18.2",
     "nodemon": "^3.0.3"
   }
 }

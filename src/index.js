@@ -1,7 +1,7 @@
-var http = require('http')
+const port = 3000;
+const http = require('http')
+const app = require('./app')
 
-var server = http.createServer(function (req, res){
-    res.end('Hello World \n')
-})
+var server = http.createServer(app)
 
-server.listen(3000)
+server.listen(port)
