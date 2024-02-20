@@ -22,9 +22,12 @@ app.engine(
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '/app/views'));
 
+// Liên kết tĩnh để sử dụng css
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Route
-const routes = require('./routes/index');
-app.use('/', routes);
+const route = require('./routes');
+route(app);
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
