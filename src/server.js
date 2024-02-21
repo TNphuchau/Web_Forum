@@ -6,11 +6,16 @@ const app = express();
 const port = 3000;
 
 // Connect MySQL
+// const db = require('./config/db/database');
+// db.connect(function (err) {
+//     if (err) throw err;
+//     console.log("Connected to MySQL!");
+// });
+
+//Connect mongooDB
 const db = require('./config/db/database');
-db.connect(function (err) {
-    if (err) throw err;
-    console.log("Connected to MySQL!");
-});
+db.connnect();
+
 
 //Template engine
 app.engine(
