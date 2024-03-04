@@ -16,6 +16,9 @@ const port = 3000;
 const db = require('./config/db/database');
 db.connnect();
 
+// Set up middleware to parse request body
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //Template engine
 app.engine(

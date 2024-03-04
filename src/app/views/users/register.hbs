@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="/css/user.css">
 </head>
+
 <body>
-    <h1>Đây là trang đăng ký</h1>
+    <div class="overlay">
+        <form action="/register" method="POST">
+            <div class="con">
+                <header class="head-form">
+                    <h2>Register</h2>
+                </header>
+                <br>
+                <div class="field-set">
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <input class="form-input" id="txt-input" type="text" placeholder="Username" name="username"
+                        required>
+                    <br>
+
+                    <span class="input-item">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input class="form-input" id="email" type="email" placeholder="Email" name="email" required>
+                    <br>
+
+                    <span class="input-item">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input class="form-input" id="name" type="text" placeholder="Fullname" name="name" required>
+                    <br>
+
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required>
+                    <span>
+                        <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
+                    </span>
+                    <br>
+
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="form-input" type="password" placeholder="Confirm Password" id="confirm_pwd"
+                        name="confirm_password" required>
+                    <br>
+
+                    <button class="log-in"> Register </button>
+                </div>
+                <div class="other">
+                    <button class="btn submits frgt-pass">Forgot Password</button>
+                    <button class="btn submits sign-up">Login
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
